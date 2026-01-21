@@ -3,7 +3,6 @@ import axios from 'axios';
 const BASE_URL = 'https://dummyjson.com/recipes';
 
 export const fetchRecipes = async () => {
-  // Fetching generic recipes to simulate a menu
   const response = await axios.get(`${BASE_URL}?limit=12`); 
   return response.data.recipes;
 };
