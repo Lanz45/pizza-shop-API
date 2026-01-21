@@ -30,7 +30,6 @@ const RecipeModal = ({ isOpen, onClose, onSubmit, initialData, isSubmitting }) =
         <h2 className="text-3xl font-extrabold mb-6 text-gray-900">
           {initialData ? 'Edit Recipe' : 'New Creation'}
         </h2>
-        {/* We use the key trick to reset the form when switching between Add/Edit */}
         <form key={initialData ? initialData.id : 'new'} onSubmit={handleSubmit} className="space-y-5">
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-1">Recipe Name</label>
